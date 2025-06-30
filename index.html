@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Site with Carousel & API</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Responsive Carousel & Joke App</h1>
+
+    <section>
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <img
+          src="https://picsum.photos/id/1015/600/300"
+          class="active"
+          alt="Image 1"
+        />
+        <img src="https://picsum.photos/id/1016/600/300" alt="Image 2" />
+        <img src="https://picsum.photos/id/1018/600/300" alt="Image 3" />
+      </div>
+      <div class="buttons">
+        <button onclick="prevImage()">Prev</button>
+        <button onclick="nextImage()">Next</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get a Random Joke</h2>
+      <button onclick="getJoke()">Get Joke</button>
+      <p id="joke">Click the button to load a joke!</p>
+    </section>
+
+    <script src="p3.js"></script>
+  </body>
+</html>

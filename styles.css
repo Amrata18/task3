@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header,
+section {
+  padding: 20px;
+}
+
+h1 {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* Carousel Styles */
+.carousel {
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#joke {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    width: 90%;
+  }
+
+  #joke {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
